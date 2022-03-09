@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <script src="https://kit.fontawesome.com/a863847d3a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">
+                <img src="./Img/logo.png" alt="Logo">
+            </a>
+            <div class="nav-links">
+
+                <i class="fa-regular fa-bars " onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./course.html">COURSE</a></li>
+                    <li><a href="./blog.html">BLOG</a></li>
+                    <li><a href="./contact.html"> CONTACT</a></li>
+                </ul>
+            </div>
+            <!-- <img src="./Img/circle-xmark-solid.svg"  class="fa fa-bars" onclick="showMenu()" alt="close"> -->
+            <i class="fa-regular fa-rectangle-xmark" onclick="showMenu()"></i>
+
+        </nav>
+
+        <h1>Contact Us</h1>
+
+
+    </section>
+
+    <!-- ------------Contact Us----------------- -->
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7527.1729038098365!2d72.82443517420687!3d19.38705124764072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7aec74f4baf9b%3A0x6d23788e01b61242!2sShastri%20Nagar%2C%20Vishal%20Nagar%2C%20Vasai%20West%2C%20Vasai-Virar%2C%20Maharashtra%20401202!5e0!3m2!1sen!2sin!4v1646624211149!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa-solid fa-house"></i>
+                    <span>
+                        <h5>
+                            XYZ Road, ABC building 
+                        </h5>
+                        <p>
+                            Bangalore, Karnataka, IN
+                        </p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>
+                        <h5>
+                            +1 8348239342
+                        </h5>
+                        <p>
+                            Monday to Saturday, 10AM TO 6PM
+                        </p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>
+                        <h5>
+                            info@xyz.com
+                        </h5>
+                        <p>
+                            Email Us your query
+                        </p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+
+
+
+            <form action="./form-handler.php" method="post"
+                <input type="text" name="name" placeholder="Enter your Name" required>
+                <input type="Email" name="email" placeholder="Enter your Email Address" required>
+                <input type="Email" name="subject" placeholder="Enter your Subject" required>
+                <textarea rows="8" name="message" placeholder="message" required></textarea>
+                <button type="submit" class="hero-btn red-btn">Send Message</button>
+            </form>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ----------Footer--------- -->
+
+    <section class="footer extra-mr">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab magni quo dignissimos harum nostrum impedit iusto
+            fugiat odio nam saepe enim laboriosam placeat facilis velit consequuntur atque, laborum perferendis officia.
+        </p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-discord"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </section>
+
+    <!-- -----------JavaScript for Toggle Menu ------  -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+
+</html>
